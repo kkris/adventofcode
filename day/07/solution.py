@@ -197,4 +197,10 @@ if __name__ == '__main__':
 
     print("Wire a has {}".format(wires["a"].signal.value))
 
+    instructions.append("16076 -> b")
+
+    wires = assemble(instructions)
+
+    print("Wire a now has {}".format(wires["a"].signal.value))
+
 
